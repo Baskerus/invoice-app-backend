@@ -19,12 +19,12 @@ public class Invoice implements Serializable {
     private Integer due;
     private String description;
     private Double total;
-    private Boolean paid;
+    private Boolean isPaid;
 
 
     public Invoice() {}
 
-    public Invoice( String name, String email, String address, String city, Integer code, String country, Integer due, String description,Double total, Boolean paid) {
+    public Invoice( String name, String email, String address, String city, Integer code, String country, Integer due, String description,Double total, Boolean isPaid) {
         this.name = name;
         this.email = email;
         this.address = address;
@@ -34,7 +34,7 @@ public class Invoice implements Serializable {
         this.due = due;
         this.description = description;
         this.total = total;
-        this.paid = paid;
+        this.isPaid = isPaid;
     }
 
     public Long getId() {
@@ -117,11 +117,11 @@ public class Invoice implements Serializable {
         this.total = total;
     }
 
-    public Boolean getPaid() {
-        return paid;
+    public Boolean getIsPaid() {
+        return isPaid;
     }
 
-    public void setPaid(Boolean paid) {
-        this.paid = paid;
+    public void setIsPaid(Boolean isPaid) {
+        this.isPaid = isPaid;
     }
 }
