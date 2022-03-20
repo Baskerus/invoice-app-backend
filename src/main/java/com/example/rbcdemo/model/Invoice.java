@@ -16,7 +16,7 @@ public class Invoice implements Serializable {
     private String city;
     private Integer code;
     private String country;
-    private Integer due;
+    private Integer due_date;
     private String description;
     private Double total;
     private Boolean isPaid;
@@ -31,7 +31,7 @@ public class Invoice implements Serializable {
         this.city = city;
         this.code = code;
         this.country = country;
-        this.due = due;
+        this.due_date = due;
         this.description = description;
         this.total = total;
         this.isPaid = isPaid;
@@ -93,12 +93,12 @@ public class Invoice implements Serializable {
         this.country = country;
     }
 
-    public Integer getDue() {
-        return due;
+    public Integer getDue_date() {
+        return due_date;
     }
 
-    public void setDue(Integer due) {
-        this.due = due;
+    public void setDue_date(Integer due_date) {
+        this.due_date = due_date;
     }
 
     public String getDescription() {
